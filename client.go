@@ -28,11 +28,16 @@ type Game struct {
 	Price        Price  `json:"price"`
 }
 
+type MetascoreDetails struct {
+	Metascore uint32 `json:"score"`
+	Url       string `json:"url"`
+}
+
 type GameDetails struct {
-	ID        uint32 `json:"id"`
-	Name      string `json:"name"`
-	Metascore uint32 `json:"metascore"`
-	Price     Price  `json:"price"`
+	ID        uint32           `json:"id"`
+	Name      string           `json:"name"`
+	Metascore MetascoreDetails `json:"metascore"`
+	Price     Price            `json:"price"`
 }
 
 type searchResponse struct {
