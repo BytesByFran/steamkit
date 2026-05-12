@@ -23,7 +23,7 @@ type Price struct {
 type Game struct {
 	ID           uint32 `json:"id"`
 	Name         string `json:"name"`
-	Metascore    uint32 `json:"metascore"`
+	Metascore    string `json:"metascore"`
 	TinyImageURL string `json:"tiny_image"`
 	Price        Price  `json:"price"`
 }
